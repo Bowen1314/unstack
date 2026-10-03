@@ -6,6 +6,8 @@ Unstack is our entry for the YouCam API Skin AI & eCommerce VTO Hackathon, in th
 
 ![Scan result from a live YouCam run: hydration mask over the photo, overall score and skin age](docs/screenshots/scan-result-live.jpg)
 
+**Demo video:** [YouTube](https://youtu.be/xSd6HyuZTYE) (2 min 55 s, 2880×1800, narrated by a synthetic voice; every YouCam call in it is live). The video files are not in the repo; [Recording the demo](#recording-the-demo) shows how to rebuild them.
+
 ## What it does, and who it's for
 
 It's for people with multi-step routines, especially people who build routines from social media and stack actives. Retinoid, glycolic toner, BHA and benzoyl peroxide on the same night is common, and so is owning no sunscreen. Unstack answers three questions.
@@ -103,6 +105,32 @@ Other settings are in [`.env.example`](.env.example). They include `UNSTACK_UNIT
 ```sh
 npm run build && npm start   # serves dist/web on http://127.0.0.1:8796
 npm run check                # TypeScript typecheck + 106 tests (76 server, 30 web)
+```
+
+### Recording the demo
+
+[`scripts/record_demo.mjs`](scripts/record_demo.mjs) records `docs/demo.mp4` (2880×1800, captions burned in, no audio) and `docs/demo-thumb.jpg`. It drives a headless Google Chrome with a throwaway profile over the DevTools protocol. It talks only to the local server and never reads a key. It also needs `ffmpeg`.
+
+```sh
+npm run build
+# Rehearsal, 0 units. Without the Nebius key, the label read is answered in the browser with a canned transcript.
+UNSTACK_FORCE_MOCK=1 UNSTACK_NEBIUS_API_KEY= npm start
+OUT_DIR=/tmp/unstack-rehearsal node scripts/record_demo.mjs
+# Live take: 26 YouCam units (HD scan 16 + sun profile 10) and one Nebius label read.
+UNSTACK_UNIT_CAP=<units already used + 26> npm start   # the server refuses to spend more than one take
+LIVE=1 node scripts/record_demo.mjs
+```
+
+`PARTS=a,b,c` re-records only some parts (shelf to plan, the YouCam scan, experiments to privacy). `WORK_DIR` keeps frames between runs, and `ASSEMBLE=dirA,dirB,dirC` rebuilds the video from recorded parts.
+
+The voice-over is added afterwards from the same frames, so it needs no new take. [`scripts/narrate_demo.mjs`](scripts/narrate_demo.mjs) does three things:
+- **Voice.** It reads [`docs/narration.md`](docs/narration.md) (one line per scene) and voices each line with [`edge-tts`](https://pypi.org/project/edge-tts/) (`en-US-AvaNeural`).
+- **Timing.** It holds still frames so each line fits its scene. Total stays at or under 2:55.
+- **Encode.** It normalises the voice to -16 LUFS and writes `docs/demo.mp4`. `docs/demo-silent.mp4` is the version without voice.
+
+```sh
+python3 -m venv /tmp/tts && /tmp/tts/bin/pip install edge-tts
+EDGE_TTS=/tmp/tts/bin/edge-tts PARTS_DIR=<WORK_DIR>/parts node scripts/narrate_demo.mjs
 ```
 
 ## Privacy

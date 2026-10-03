@@ -308,3 +308,9 @@ One SD skin-analysis scan with 1 concern (moisture), run from the browser throug
 - Mask PNGs come back 1200×1600 for a 1200×1600 photo, so the overlay lines up without any scaling.
 - **New:** the presigned result URLs serve masks as `Content-Type: binary/octet-stream`. The server now labels copied masks by their magic bytes (`image/png`), and the mock serves the same header.
 - `data/verify-ledger.json` total: 26 → 35 of the 60-unit verification cap.
+
+### 12.2 Demo video take (2026-10-03)
+
+One live take through the Unstack server for `docs/demo.mp4`: 26 units, balance 1005 → 979.
+- **Skin analysis:** HD with 8 concerns, Sample A uploaded as a file, 16 units. It finished in about 14 s, the real masks were copied, and the task was deleted.
+- **Fitzpatrick:** sent via `src_file_id` (Sample A re-encoded to JPEG in the browser, then uploaded), 10 units. **This was the first live run of this path, and it works.** Type II, about 10 s, task deleted.
