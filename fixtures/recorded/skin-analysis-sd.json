@@ -1,0 +1,307 @@
+{
+  "recordedAt": "2026-10-03T01:06:13.819Z",
+  "sample": "yc-skin-01",
+  "dstActions": [
+    "moisture",
+    "oiliness",
+    "pore",
+    "texture",
+    "acne",
+    "radiance",
+    "age_spot",
+    "redness",
+    "wrinkle",
+    "firmness",
+    "dark_circle_v2",
+    "eye_bag",
+    "tear_trough",
+    "droopy_upper_eyelid",
+    "droopy_lower_eyelid",
+    "skin_type"
+  ],
+  "polls": 4,
+  "seconds": 6.425,
+  "maskAfterDelete": "HTTP 404",
+  "calls": [
+    {
+      "method": "POST",
+      "path": "/s2s/v2.0/file",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "files": [
+            {
+              "content_type": "image/png",
+              "file_name": "youcam_sample_skin_01.png",
+              "file_id": "<redacted>",
+              "requests": [
+                {
+                  "method": "PUT",
+                  "url": "<redacted-url>",
+                  "headers": {
+                    "Content-Length": "709590",
+                    "Content-Type": "image/png"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/s2s/v2.1/task/skin-analysis",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "task_id": "<redacted>"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/s2s/v2.1/task/skin-analysis/<task_id>",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "error": null,
+          "results": null,
+          "task_status": "running"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/s2s/v2.1/task/skin-analysis/<task_id>",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "error": null,
+          "results": null,
+          "task_status": "running"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/s2s/v2.1/task/skin-analysis/<task_id>",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "error": null,
+          "results": null,
+          "task_status": "running"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/s2s/v2.1/task/skin-analysis/<task_id>",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "error": null,
+          "results": {
+            "output": [
+              {
+                "ui_score": 70,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 56.06801509857178,
+                "type": "tear_trough",
+                "url": null
+              },
+              {
+                "ui_score": 58,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 27.27997899055481,
+                "type": "eye_bag",
+                "url": null
+              },
+              {
+                "ui_score": 84,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 86.62751317024231,
+                "type": "firmness",
+                "url": null
+              },
+              {
+                "ui_score": 97,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 98.29695129394531,
+                "type": "redness",
+                "url": null
+              },
+              {
+                "ui_score": 63,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 39.80274796485901,
+                "type": "droopy_lower_eyelid",
+                "url": null
+              },
+              {
+                "ui_score": 81,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 80.843186378479,
+                "type": "droopy_upper_eyelid",
+                "url": null
+              },
+              {
+                "ui_score": 79,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 76.49451076984406,
+                "type": "pore",
+                "url": null
+              },
+              {
+                "ui_score": 65,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 44.694091796875,
+                "type": "oiliness",
+                "url": null
+              },
+              {
+                "ui_score": 74,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 64.0005350112915,
+                "type": "texture",
+                "url": null
+              },
+              {
+                "ui_score": 72,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 74.18199920654297,
+                "type": "age_spot",
+                "url": null
+              },
+              {
+                "ui_score": 77,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 72.00765609741211,
+                "type": "radiance",
+                "url": null
+              },
+              {
+                "ui_score": 71,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 64.9554967880249,
+                "type": "wrinkle",
+                "url": null
+              },
+              {
+                "ui_score": 72,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 68.30208599567413,
+                "type": "dark_circle_v2",
+                "url": null
+              },
+              {
+                "ui_score": 99,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 100,
+                "type": "acne",
+                "url": null
+              },
+              {
+                "ui_score": 65,
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "raw_score": 37.04743683338165,
+                "type": "moisture",
+                "url": null
+              },
+              {
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "type": "skin_type",
+                "region": "whole",
+                "skin_type": "Oily",
+                "url": null
+              },
+              {
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "type": "skin_type",
+                "region": "t_zone",
+                "skin_type": "Oily",
+                "url": null
+              },
+              {
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "type": "skin_type",
+                "region": "u_zone",
+                "skin_type": "Oily",
+                "url": null
+              },
+              {
+                "score": 75.13333333333334,
+                "type": "all",
+                "url": null
+              },
+              {
+                "score": 52,
+                "type": "skin_age",
+                "url": null
+              },
+              {
+                "mask_urls": [
+                  "<redacted-url>"
+                ],
+                "type": "resize_image",
+                "url": null
+              }
+            ]
+          },
+          "task_status": "success"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/s2s/v2.0/task/delete",
+      "status": 200,
+      "body": {
+        "status": 200
+      }
+    }
+  ]
+}

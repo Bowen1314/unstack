@@ -1,0 +1,818 @@
+[
+  {
+    "method": "GET",
+    "path": "/s2s/v1.0/client/credit",
+    "status": 200,
+    "body": {
+      "status": 200,
+      "results": [
+        {
+          "id": 0,
+          "type": "ApiPaygToken",
+          "amount": 1000,
+          "amount_dec": 1000,
+          "expiry": 1798847999000
+        },
+        {
+          "id": 0,
+          "type": "ApiPaygToken",
+          "amount": 40,
+          "amount_dec": 40,
+          "expiry": 1822607999000
+        }
+      ]
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/s2s/v2.0/credit/feature-cost?page_size=20",
+    "status": 200,
+    "body": {
+      "status": 200,
+      "result": {
+        "skus": [
+          {
+            "description": "AI Photo Enhance V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/enhance"
+          },
+          {
+            "description": "AI Object Removal (Standard)",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/obj-removal"
+          },
+          {
+            "description": "AI Object Removal (Professional)",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/generative-fill"
+          },
+          {
+            "description": "AI Photo Background Removal V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/sod"
+          },
+          {
+            "description": "AI Photo Colorize V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/colorize"
+          },
+          {
+            "description": "AI Image Generator V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/text-to-image"
+          },
+          {
+            "description": "AI Image Generator V2.0 (Text to Image)",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/text-to-image/youcam"
+          },
+          {
+            "description": "AI Image Generator V2.0 (Image to Image)",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/image-to-image/youcam"
+          },
+          {
+            "description": "AI Hair Style Virtual Try-On V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-style"
+          },
+          {
+            "description": "AI Hair Style Virtual Try-On V2.0 (Custom)",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-transfer"
+          },
+          {
+            "description": "AI Hair Style Virtual Try-On V2.0 (Custom)",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/hair-transfer"
+          },
+          {
+            "description": "AI Hair Style Virtual Try-On V2.0 (Preset)",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/hair-transfer"
+          },
+          {
+            "description": "AI Hair Extension Virtual Try-On V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-ext"
+          },
+          {
+            "description": "AI Bangs Filter Virtual Try-On V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-bang"
+          },
+          {
+            "description": "AI Hair Volume Virtual Try-On V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-vol"
+          },
+          {
+            "description": "AI Wavy Hair Virtual Try-On V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-curl"
+          },
+          {
+            "description": "AI Image Extender V2.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/out-paint"
+          },
+          {
+            "description": "AI Photo Lighting V2.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/lighting"
+          },
+          {
+            "description": "AI Replace V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/obj-replace"
+          },
+          {
+            "description": "AI Photo Background Change V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/sod/change-background"
+          }
+        ],
+        "next_token": "MjA6MA"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/s2s/v2.0/credit/feature-cost?page_size=20&starting_token=MjA6MA",
+    "status": 200,
+    "body": {
+      "status": 200,
+      "result": {
+        "skus": [
+          {
+            "description": "AI Photo Background Blur V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/sod/blur-background"
+          },
+          {
+            "description": "AI Photo Background Blur V2.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/bg-blur"
+          },
+          {
+            "description": "AI Color Correction V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/colorize/color-correct"
+          },
+          {
+            "description": "AI Face Swap V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/face-swap"
+          },
+          {
+            "description": "AI Video Enhancer V1.0",
+            "amount": 1,
+            "unit": "second",
+            "proc_unit": 2,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/video-sr"
+          },
+          {
+            "description": "AI Makeup Transfer V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/mu-transfer"
+          },
+          {
+            "description": "AI Headshot Generator V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 2,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/headshot"
+          },
+          {
+            "description": "AI Studio Generator V3.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 2,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/ai-studio"
+          },
+          {
+            "description": "AI Avatar Generator V3.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 4,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/ai-avatar"
+          },
+          {
+            "description": "AI Video Style Transfer V1.0",
+            "amount": 4,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/video-trans"
+          },
+          {
+            "description": "AI Video Face Swap V1.0",
+            "amount": 1,
+            "unit": "second",
+            "proc_unit": 5,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/face-swap-vid"
+          },
+          {
+            "description": "AI Skin Analysis V2.0 HD (1-4 concerns)",
+            "amount": 12,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.0 HD (5-8 concerns)",
+            "amount": 16,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.0 HD (9-12 concerns)",
+            "amount": 20,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.0 HD (13-16 concerns)",
+            "amount": 22,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.0 SD (1-4 concerns)",
+            "amount": 9,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.0 SD (5-8 concerns)",
+            "amount": 12,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.0 SD (9-12 concerns)",
+            "amount": 14,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.0 SD (13-16 concerns)",
+            "amount": 16,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.1 HD (1-4 concerns)",
+            "amount": 12,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/skin-analysis"
+          }
+        ],
+        "next_token": "MzI6MQ"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/s2s/v2.0/credit/feature-cost?page_size=20&starting_token=MzI6MQ",
+    "status": 200,
+    "body": {
+      "status": 200,
+      "result": {
+        "skus": [
+          {
+            "description": "AI Skin Analysis V2.1 HD (5-8 concerns)",
+            "amount": 16,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.1 HD (9-12 concerns)",
+            "amount": 20,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.1 HD (13-16 concerns)",
+            "amount": 22,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.1 SD (1-4 concerns)",
+            "amount": 9,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.1 SD (5-8 concerns)",
+            "amount": 12,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.1 SD (9-12 concerns)",
+            "amount": 14,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/skin-analysis"
+          },
+          {
+            "description": "AI Skin Analysis V2.1 SD (13-16 concerns)",
+            "amount": 16,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.1/task/skin-analysis"
+          },
+          {
+            "description": "AI Video Generator (Professional) V1.0",
+            "amount": 6,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/image-to-video"
+          },
+          {
+            "description": "AI Video Generator (Standard) V1.0",
+            "amount": 3,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/image-to-video"
+          },
+          {
+            "description": "AI Video Generator (Image to Video) V2.0 (480p)",
+            "amount": 1,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/image-to-video/youcam"
+          },
+          {
+            "description": "AI Video Generator (Image to Video) V2.0 (720p)",
+            "amount": 2,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/image-to-video/youcam"
+          },
+          {
+            "description": "AI Video Generator (Image to Video) V2.0 (1080p)",
+            "amount": 3,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/image-to-video/youcam"
+          },
+          {
+            "description": "AI Video Generator (Text to Video) V2.0 (720p)",
+            "amount": 2,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/text-to-video/youcam"
+          },
+          {
+            "description": "AI Video Generator (Text to Video) V2.0 (1080p)",
+            "amount": 3,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/text-to-video/youcam"
+          },
+          {
+            "description": "AI Clothes Virtual Try-On V2.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/cloth"
+          },
+          {
+            "description": "AI Clothes Virtual Try-On V3.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/cloth-v3"
+          },
+          {
+            "description": "AI Clothes Virtual Try-On V4.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/cloth-v4"
+          },
+          {
+            "description": "AI Fabric Virtual Try-On V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/fabric"
+          },
+          {
+            "description": "AI Hair Color Virtual Try-On V1.0 (Full)",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-color"
+          },
+          {
+            "description": "AI Hair Color Virtual Try-On V1.0 (Ombre)",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-color"
+          }
+        ],
+        "next_token": "NDE6MA"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/s2s/v2.0/credit/feature-cost?page_size=20&starting_token=NDE6MA",
+    "status": 200,
+    "body": {
+      "status": 200,
+      "result": {
+        "skus": [
+          {
+            "description": "Face Attribute & Ratio Analysis (1-5 features)",
+            "amount": 10,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/face-attr-analysis"
+          },
+          {
+            "description": "Face Attribute & Ratio Analysis (6-14 features)",
+            "amount": 20,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/face-attr-analysis"
+          },
+          {
+            "description": "Face Attribute & Ratio Analysis (15-28 features)",
+            "amount": 30,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/face-attr-analysis"
+          },
+          {
+            "description": "AI Facial Color Tones Analyzer V1.0",
+            "amount": 20,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-tone-analysis"
+          },
+          {
+            "description": "AI Hair Length Detection V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-length-detection"
+          },
+          {
+            "description": "AI Hair Type Detection V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-type-detection"
+          },
+          {
+            "description": "AI Hair Frizziness Detection V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-frizziness-detection"
+          },
+          {
+            "description": "AI Beard Style Generator V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/beard-style"
+          },
+          {
+            "description": "AI Aging Simulation V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 16,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/aging"
+          },
+          {
+            "description": "AI Look Virtual Try-On V1.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/look-vto"
+          },
+          {
+            "description": "AI Makeup Virtual Try-On V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/makeup-vto"
+          },
+          {
+            "description": "AI Earrings Virtual Try-On V1.0 (Stacked)",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/2d-vto/earring"
+          },
+          {
+            "description": "AI Earrings Virtual Try-On V1.0 (Single)",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/2d-vto/earring"
+          },
+          {
+            "description": "AI Necklace Virtual Try-On V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/2d-vto/necklace"
+          },
+          {
+            "description": "AI Ring Virtual Try-On V1.0 (Stacked)",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/2d-vto/ring"
+          },
+          {
+            "description": "AI Ring Virtual Try-On V1.0 (Single)",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/2d-vto/ring"
+          },
+          {
+            "description": "AI Bracelet Virtual Try-On V1.0 (Stacked)",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/2d-vto/bracelet"
+          },
+          {
+            "description": "AI Bracelet Virtual Try-On V1.0 (Single)",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/2d-vto/bracelet"
+          },
+          {
+            "description": "AI Watch Virtual Try-On V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/2d-vto/watch"
+          },
+          {
+            "description": "AI Bag Virtual Try-On V2.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/bag"
+          }
+        ],
+        "next_token": "NTY6MA"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/s2s/v2.0/credit/feature-cost?page_size=20&starting_token=NTY6MA",
+    "status": 200,
+    "body": {
+      "status": 200,
+      "result": {
+        "skus": [
+          {
+            "description": "AI Scarf Virtual Try-On V2.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/scarf"
+          },
+          {
+            "description": "AI Shoes Virtual Try-On V2.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/shoes"
+          },
+          {
+            "description": "AI Hat Virtual Try-On V2.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hat"
+          },
+          {
+            "description": "AI Face Reshape V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/face-reshape"
+          },
+          {
+            "description": "AI Body Reshape V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/body-reshape"
+          },
+          {
+            "description": "AI Nail Virtual Try-On V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/nail-vto"
+          },
+          {
+            "description": "AI Abs Filter V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/abs-shape"
+          },
+          {
+            "description": "AI Breast Augmentation Simulator V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/breast-shape"
+          },
+          {
+            "description": "Skin Simulation (1-4 concerns)",
+            "amount": 4,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-simulation"
+          },
+          {
+            "description": "Skin Simulation (5-10 concerns)",
+            "amount": 6,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/skin-simulation"
+          },
+          {
+            "description": "AI Teeth Whitening V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/teeth-whiten"
+          },
+          {
+            "description": "AI Eye Color Lens Virtual Try-On V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/eye-color-vto"
+          },
+          {
+            "description": "AI Hair Density Detection V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/hair-density-detection"
+          },
+          {
+            "description": "AI Face Lift V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/face-lift"
+          },
+          {
+            "description": "AI Smile V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/ai-smile"
+          },
+          {
+            "description": "AI Fitzpatrick Skin Type Analysis V1.0",
+            "amount": 10,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/fitzpatrick-scale-analyzer"
+          },
+          {
+            "description": "AI Photo Background Change V2.0",
+            "amount": 4,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/bg-replace"
+          },
+          {
+            "description": "AI Video Background Change V2.0",
+            "amount": 2,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/bg-replace-vid"
+          },
+          {
+            "description": "AI Video Object Removal V2.0",
+            "amount": 2,
+            "unit": "second",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/obj-rem-vid"
+          },
+          {
+            "description": "AI Nail Transfer V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/ai-nail"
+          }
+        ],
+        "next_token": "NzU6MA"
+      }
+    }
+  },
+  {
+    "method": "GET",
+    "path": "/s2s/v2.0/credit/feature-cost?page_size=20&starting_token=NzU6MA",
+    "status": 200,
+    "body": {
+      "status": 200,
+      "result": {
+        "skus": [
+          {
+            "description": "AI Watermark Removal V1.0",
+            "amount": 1,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/wmk-removal"
+          },
+          {
+            "description": "AI Shoes Virtual Try-On V3.0",
+            "amount": 2,
+            "unit": "result_image",
+            "proc_unit": 1,
+            "run_task_url": "https://yce-api-01.makeupar.com/s2s/v2.0/task/shoes-transfer"
+          }
+        ],
+        "next_token": null
+      }
+    }
+  }
+]

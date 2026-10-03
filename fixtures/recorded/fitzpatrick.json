@@ -1,0 +1,69 @@
+{
+  "recordedAt": "2026-10-03T01:06:18.570Z",
+  "sample": "yc-sample-1",
+  "polls": 3,
+  "seconds": 4.284,
+  "calls": [
+    {
+      "method": "POST",
+      "path": "/s2s/v2.0/task/fitzpatrick-scale-analyzer",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "task_id": "<redacted>"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/s2s/v2.0/task/fitzpatrick-scale-analyzer/<task_id>",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "error": null,
+          "results": null,
+          "task_status": "running"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/s2s/v2.0/task/fitzpatrick-scale-analyzer/<task_id>",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "error": null,
+          "results": null,
+          "task_status": "running"
+        }
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/s2s/v2.0/task/fitzpatrick-scale-analyzer/<task_id>",
+      "status": 200,
+      "body": {
+        "status": 200,
+        "data": {
+          "error": null,
+          "results": {
+            "timed": 2325,
+            "fitzpatrick_scale": "I"
+          },
+          "task_status": "success"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/s2s/v2.0/task/delete",
+      "status": 200,
+      "body": {
+        "status": 200
+      }
+    }
+  ]
+}

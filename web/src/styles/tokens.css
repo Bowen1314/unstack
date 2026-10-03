@@ -1,0 +1,119 @@
+/*
+ * Design tokens. "Lab notebook": warm paper, near-black ink, one deep-teal accent.
+ * Every text/background pair below was checked for WCAG AA (≥ 4.5:1) in both themes.
+ */
+:root {
+  color-scheme: light;
+
+  --paper: #f6f3ee;
+  --paper-sunk: #efebe4;
+  --card: #fdfbf8;
+  --ink: #1d1c1a;
+  --ink-2: #55514a;
+  --ink-3: #6f6a62;
+  --line: #e3ddd3;
+  --line-strong: #cdc5b8;
+  --rule: rgba(29, 28, 26, 0.045);
+
+  --accent: #0e5f5a;
+  --accent-ink: #0e5f5a;
+  --accent-soft: #e1eeeb;
+  --accent-line: #a9cdc7;
+  --on-accent: #ffffff;
+
+  --high: #a4241b;
+  --high-bg: #fbe8e5;
+  --high-line: #efbdb6;
+  --medium: #8f4a06;
+  --medium-bg: #fcefdc;
+  --medium-line: #ecc995;
+  --low: #6b5a00;
+  --low-bg: #f6f0d2;
+  --low-line: #ddd08a;
+  --info: #2f5b8a;
+  --info-bg: #e6eef7;
+  --info-line: #b5cbe4;
+  --ok: #2c6b3a;
+  --ok-bg: #e4f1e6;
+  --ok-line: #b2d6b9;
+
+  /* Sequential tint for face zones (one hue, light → deep). */
+  --zone: #b4532a;
+  --chart-band: rgba(14, 95, 90, 0.12);
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: ui-serif, 'Iowan Old Style', Charter, 'Palatino Linotype', Palatino, Georgia, serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  --shadow-pop: 0 6px 24px rgba(29, 28, 26, 0.12);
+  --focus: 0 0 0 3px var(--paper), 0 0 0 5px var(--accent);
+
+  --header-h: 60px;
+  --tabbar-h: 64px;
+  --maxw: 1120px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --paper: #141413;
+    --paper-sunk: #0f0f0e;
+    --card: #1c1c1a;
+    --ink: #ece8e1;
+    --ink-2: #bdb7ac;
+    --ink-3: #9c968c;
+    --line: #2f2e2a;
+    --line-strong: #45433d;
+    --rule: rgba(236, 232, 225, 0.035);
+
+    --accent: #5ec4b8;
+    --accent-ink: #5ec4b8;
+    --accent-soft: #17322f;
+    --accent-line: #2c5e58;
+    --on-accent: #10201e;
+
+    --high: #ff9c8f;
+    --high-bg: #3a1d1a;
+    --high-line: #6b3029;
+    --medium: #f3b46b;
+    --medium-bg: #36260f;
+    --medium-line: #664820;
+    --low: #ddc95c;
+    --low-bg: #2f2a10;
+    --low-line: #5a5120;
+    --info: #93bdf0;
+    --info-bg: #172536;
+    --info-line: #2d4767;
+    --ok: #8fd19c;
+    --ok-bg: #16291a;
+    --ok-line: #2d5534;
+
+    --zone: #f08a5d;
+    --chart-band: rgba(94, 196, 184, 0.16);
+
+    --shadow-pop: 0 6px 24px rgba(0, 0, 0, 0.45);
+  }
+}
