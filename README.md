@@ -4,7 +4,7 @@
 
 Unstack is our entry for the YouCam API Skin AI & eCommerce VTO Hackathon, in the Skin AI track. It is built on the YouCam Skin Analysis API, the Fitzpatrick Skin Type API and the JS Camera Kit.
 
-![Scan result from a live YouCam run: hydration mask over the photo, overall score and skin age](docs/screenshots/scan-result-live.jpg)
+![Scan result from a live YouCam run: the sample photo, overall score and skin age](docs/screenshots/scan-result-live.jpg)
 
 **Demo video:** [YouTube](https://youtu.be/xSd6HyuZTYE) (2 min 55 s, 2880×1800, narrated by a synthetic voice; every YouCam call in it is live). The video files are not in the repo; [Recording the demo](#recording-the-demo) shows how to rebuild them.
 
